@@ -17,3 +17,34 @@ There are two dependencies/packages
 package-lock.json - keeps the track of the exact version of the package which has been installed.
 transitive dependencies - our project has a dependency on one package that package has dependency on another packages this is called "transitive dependency".
 .gitignore - if you want restrict some code or some files not to go inside git then put those file names in the .gitignore.
+
+Building the app using parcel -
+
+npx parcel index.html
+
+npx - executing a package.
+npm - install a package.
+
+Injecting the react into the application using cdn is not a good way. Injecting the react into the application using npm package is preffered way.
+
+Parcel - 
+
+- Dev Build
+- Local Server
+- Host the app to server
+- Automatically refreshing the page for us
+- HMR - Hot Module Replacement
+- File waching algorithms - C++
+- caching thing for you  - fater builds
+- Image optimization
+- Minification of file
+- Bundling 
+- Compressing
+- Consistent Hashing
+- Code splitting
+- Differential Bundling - to support older browsers
+- Diagnostic
+- Good error reporting
+- HTTPS
+- Tree Shaking - removed unused code
+
