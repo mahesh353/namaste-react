@@ -1,0 +1,19 @@
+NPM - its not node package manager but its everything apart form node package manager.
+its a package manager. its a standard repository for all the packages.all the packages are hosted in NPM & it manages it for developers.
+
+Package.json is a configuration for the NPM.
+bundler - whole code needs to be budled/minified/optimized bundler help you do all these things.
+bundler bundle/packge your code so that we can shift it to production.
+webpack/parcel/wheat
+
+There are two dependencies/packages
+1) Dev dependencies - it means it is generally required in development phase
+2) Normal dependencies - used in production
+
+24/06/2023
+~ - it will upgrade the package to the latest major version 
+^ - it will upgrade the package to the latest minor version. this is recommended.
+
+package-lock.json - keeps the track of the exact version of the package which has been installed.
+transitive dependencies - our project has a dependency on one package that package has dependency on another packages this is called "transitive dependency".
+.gitignore - if you want restrict some code or some files not to go inside git then put those file names in the .gitignore.
