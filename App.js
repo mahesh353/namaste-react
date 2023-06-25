@@ -16,6 +16,22 @@ const jsxHeading = (
   </h1>
 );
 
+const TitleComponent = () => (
+  <h1 id="heading" className="head">
+    Namaste React using JSX !
+  </h1>
+);
+
+//React Components
+const HeadingComponent = () => {
+  return (
+    <div id="container">
+      <TitleComponent />
+      <h1> Namaste React Functional component !</h1>
+    </div>
+  );
+};
+
 var root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxHeading);
+root.render(<HeadingComponent />);

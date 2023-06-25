@@ -7,3 +7,11 @@ JSX is a html like syntax.
 JSX is not valid/Pure javascript. js engine does not understand this code.
 Parcel => Babel is basically coverting/transpile JSX code to valid/pure javascript.
 while giving attribute to JSX we need to follow camel casing ex - id, className, tabIndex etc.
+
+React components -
+
+1) Class based Components - old way of writing code/ uses javascript classes.
+2) Functional Components - new way of writing code / uses javascript functions.
+- its just a normal javascript function which return jsx code/or which returs react element.
+
+** Component composition - calling one component inside a another component.
