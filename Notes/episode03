@@ -1,0 +1,9 @@
+JSX - Javascript syntax to create react elements.
+Html or xml like syntax
+JSX is not part of React. React & JSX both are different things. JSX makes developers life easy.
+JSX is not html inside javascript.
+JSX is not html.
+JSX is a html like syntax.
+JSX is not valid/Pure javascript. js engine does not understand this code.
+Parcel => Babel is basically coverting/transpile JSX code to valid/pure javascript.
+while giving attribute to JSX we need to follow camel casing ex - id, className, tabIndex etc.
