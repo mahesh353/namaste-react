@@ -25,10 +25,14 @@ const TitleComponent = () => (
 //React Components
 const HeadingComponent = () => {
   return (
-    <div id="container">
-      <TitleComponent />
-      <h1> Namaste React Functional component !</h1>
-    </div>
+    <>
+      <div id="container">
+        {/* <TitleComponent /> */}
+        {jsxHeading}
+        <h1> Namaste React Functional component !</h1>
+      </div>
+      <div></div>
+    </>
   );
 };
 
