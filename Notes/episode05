@@ -1,0 +1,16 @@
+Everything that you can do using react, that you do using html/css/javascript or any other framework which is out there.
+Then Why react?
+gives you superpowers to build large production ready/optimized applications.
+
+React Hooks -
+
+Never keep your harcoded data in component folder.Never ever keep hardcoded string in your component.
+put all these details in Utils.js/const.js/config.js
+
+in One file we can have only one default export, we can not have multiple exports in one file.
+so if we want to export multiple things from one file then we need to use named export.
+
+Ways export the data
+1) Export default dataName - Normal/Default Export
+2) Named export - to export multiple things from one file. - to import names export we need to use {} brances.
+
