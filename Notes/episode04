@@ -1,0 +1,19 @@
+Style - 
+
+{} - we can write styles inside JSX as well but it is not recommended. it is always recommended to write styles in separate
+css file.
+
+React Props/properties -
+- which we can use to pass data to components.
+- Props are just like passing normal arguments to functions.
+- Props are used to pass data dynamically to components.
+- we can do destructuring as well.
+{resName, cuisine} = prop;
+
+Config driven UI - 
+Our website is driven by config.
+Controlling your UI using data/config & this config comes from database.
+Whenever we are looping over the list using map function we need to always provide the key in react.
+becuase if id is not given react will re render all the items/cards & its time consuming process & it makes ui slow & takes a performance hit.
+if unique id is given then react does not re render all items/cards, react rerender only new items/card.
+React official documentation says that never use index as a key in react.index as a key is an antipattern.
