@@ -1,0 +1,29 @@
+Monolith & Microservice architecture - 
+
+Monolith - 
+
+We have api,ui,auth,db,sms all code written inside one big project.
+
+Microservice architecture - 
+
+we have different services for diff job. UI,DB,Auth, API, SMS sending service. & all these services 
+conbined together forms a big app. all these services talk to each other depends on the requirement.
+this ia also known as SRP and separation of concern.
+
+How to call backend services from API - 
+there are 2 approaches
+1) loading => api calll = > Render
+2) loading => load ui => make api call => rerender the ui - this is the recommended approach in react.
+
+useEffect(()=>
+{
+   console.log('called');
+}, []) hook =>
+
+1st parameter = callback function, this function will get called once your component is rendered.
+2nd parameter = dependency array
+
+if we want to do anything once component is rendered, you can use the useEffect callback function.
+
+Shimmer UI - 
+show something or empty cards to the user till the actual data gets loaded or rendered.
