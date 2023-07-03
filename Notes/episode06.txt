@@ -27,3 +27,7 @@ if we want to do anything once component is rendered, you can use the useEffect 
 
 Shimmer UI - 
 show something or empty cards to the user till the actual data gets loaded or rendered.
+
+Conditional Rendering - Render the UI based on the Condition.
+
+Whenever state variables changes react will rerenders the UI.
