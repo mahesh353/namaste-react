@@ -1,0 +1,64 @@
+Everything that you can do using react, that you do using html/css/javascript or any other framework which is out there.
+Then Why react?
+gives you superpowers to build large production ready/optimized applications.
+
+React Hooks -
+
+Never keep your harcoded data in component folder.Never ever keep hardcoded string in your component.
+put all these details in Utils.js/const.js/config.js
+
+in One file we can have only one default export, we can not have multiple exports in one file.
+so if we want to export multiple things from one file then we need to use named export.
+
+Two types of export/import the data
+1) Export default dataName - Normal/Default Export - export default {name of variable/componentname}
+import variable/componentname from path
+
+2) Named export - to export multiple things from one file. - to import names export we need to use {} brances.
+export const name = "";
+import {variable/componentname} from path
+
+State Variable - 
+Super powerfull variable - use react hooks
+it maintains the state of the component/applications.
+
+React hooks - 
+a normal javascript function which is given to us by react.its a prebuild. 
+function comes with some super power/its a utility function given by react.
+Two most important hooks - 
+-useState() - Use to create superpowerfull react variable.
+-useEffect() - 
+
+State Variable - its maintains the state of the variable.
+Local State Variable - it keeps the data in sync with the UI.
+const {listOfRestaurants}  = useSate();
+const [listOfRestaurants] = useSate([]);
+
+we can not directly modify the state of the variable, we need to do it using the function as a second argument to array
+
+const [listOfRestaurants] = useSate([data,fn to update data]);
+
+React is very fast in dom maipulation.
+
+** Render - Whenever the state variables updates react will rerenders the component.
+
+
+Virtual dom -  is not an actual DOM but its a representation of actual DOM. Object representation of jsx/react element or
+component is nothing but the react virtual DOM.
+
+React algorithm/reconciliation/react fibre/diff algorithm - find out the difference between 2 virtual dom (updated virtual DOM & old virtual DOM)
+& actually update the dom.
+it came/introduced in react 16
+We are using react 18
+react fibre is the new way of finding the diff & updating the dom.
+finding out the difference between 2 virtual dom is fast as compare to finding out the difference between 2 html.
+
+React fibre - 
+
+https://github.com/acdlite/react-fiber-architecture
+
+react is doing efficient dom manipulation.
+
+
+
+
