@@ -1,0 +1,25 @@
+React Hooks -
+
+UseState() -
+
+UseEffect(callbackfunction, [dependency array]) - 
+if no dependency array, useEffect will get called on every time componet renders. 
+if dependecyte array is empty, useEffect will get called only once(only initial render) 
+if dependecy array is let [btnName], useEffect will get called everytime btnName changes.
+dependecy array will change the behaviour of UseEffect.
+
+Best Practices - 
+Never create useState variable outside your component.
+Try to call all the hooks on the top of component.
+Never create useState inside if/else.
+Never cerate state variables inside function or for loop.
+state variables meant to created at the top level inside functional components.
+
+Routing In React - 
+Library  - React router dom.
+createBrowserRouter to create routes.
+path : "pathname"
+element:<Component/>
+RouterProvider is use to provide routing configuration to app.
+ErrorElement - to show the error page/component.
+useRouteError - hook given by react router dom for error.it gives you more information about the error.
