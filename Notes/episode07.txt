@@ -23,3 +23,16 @@ element:<Component/>
 RouterProvider is use to provide routing configuration to app.
 ErrorElement - to show the error page/component.
 useRouteError - hook given by react router dom for error.it gives you more information about the error.
+<Outlet/> - is used to render view specific content based on route path.
+Outlet will be replaced by component at runtime and based on the active route.
+never ever use an anchor tag for routing in react.
+Link - is used to create link in react instead of anchor tag.
+
+There are 2 types of routing in web apps - 
+client side routing - we are not making any network calls.
+server side routing - ite reloads the whole page & makes the network call.Page comes from server
+
+useParams hook - 
+
+to fetch router data form the route.
+key should be applied to parent element
