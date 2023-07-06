@@ -1,0 +1,13 @@
+Different ways to add css to react elements/components -
+writing a css a in one file only it is not recommended way. styled components is another & preffered way to add 
+style to react  elements/components.
+css
+saas - syntactically awesom style sheets
+scss
+tailwind css - 
+material UI
+bootstrap
+chakra UI
+Ant Design
+
+tailwind css gives you all the class for your requirement.
