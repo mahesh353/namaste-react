@@ -10,6 +10,8 @@ if you want to create a state variable in class based component, then constructo
 never update the state variables directly. use setstate method to update state variables in class based component.
 
 Why do we right super(props) in class based components?
+why async is not allowed in useEffect callback?
+
 
 What are life cycle methods in react class based components?
 Loading/Mouting  are same. 
@@ -72,5 +74,14 @@ render(API data);
 ComponentDidUpdate.
 
 ComponentWillUnmount will get called when the component gets uploaded or when we navigate to another component.
+- we will write clearintervals inside the this method.
+clearInterval(this.timer); in class base component
 
+how can we clean intervals in the functinal component - 
+you can return a function from useEffect() and that function will get called when componets get unmounted. & this is unmounting phase.
+
+NEver ever compare react class compoment cycle methods with functional component lifecycle methods.
+componentDidMount & useEffect is not same.
+if we call setinterval in single page application even if we navigate to another component still setinteval will get called.
+SPA it is not reloading the page it is just changing the pages.
 

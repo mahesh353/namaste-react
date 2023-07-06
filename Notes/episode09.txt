@@ -1,0 +1,36 @@
+Optimizing our App - 
+
+Custom Hooks - 
+ - Javascript utility function given by react to us.
+ - Creating a custom hook is very easy just start custom hook name as useRestaurantMenu
+ - its not mandatory to start hook name with use but its a standard.
+
+window.addEventListener("offline", () => {
+      setOnlineStatus(false);
+});
+
+window.addEventListener("online", () => {
+        setOnlineStatus(true);
+});
+
+Bundler bundles all files into one js file.
+
+How to optimize the size of the files ?
+break down your application into smaller javascript files.
+make smaller bundles of these files and this process is named as chunking/code splitting/Dynamic bundling.
+how to build smaller bundles?
+we should do the logical separation of bundles.
+import the different componets lazily/or demand loading.based on path load the components.
+
+to load the components lazily use below syntax -
+const Grocery = lazy(()=>{
+  import("./components/Grocery");
+})
+Suspense - is used to load the components when lazily loads componets takes time.
+  path: "/grocery",
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <Grocery />
+          </Suspense>
+        ),
+
