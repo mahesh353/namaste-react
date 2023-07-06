@@ -70,6 +70,55 @@ const HeadingComponent = () => {
 };
 
 
+React - NPM (Package Manager but it is not "node package manager!!")
+📦 package.json & 🔒 package-lock.json
+
+**Imp** I failed in few of the interviews because of not able to answer properly on npm even though having work experience.
+
+I just wanted to spread the knowledge what I have learnt on package manager (npm) from Namaste React done by the great soul Akshay Saini 🚀
+
+Important to know that package manager (NPM) plays a major role in web development. So, we should have a configuration file for npm, that will maintain all packages/dependencies which we need during development & production phase.
+
+1️⃣ package.json - This configuration file is for package manager (npm)
+✔ npm init - this initializer can be used to set up a new or existing npm package
+Few important sections of this file -
+✔ Scripts : We can keep few scripts to "starts or build or test" run easily.
+"npm run start or npm start" instead of "npx parcel index.html"
+📍 npx - it is used to execute the package (one time)
+📍 npm - it is used to install/get any package/libraries into project
+
+✔ Normal dependencies - these are required to run the application on development & production as well.
+- npm install react or npm i react
+- npm install react-dom or npm i react-dom
+
+✔ Dev Dependencies - these are required only during development phase.
+- npm install --save-dev parcel or npm i -D parcel
+
+2️⃣ Package version details - "^2.9.3" or "~2.9.3" or "2.9.3"
+2 - Major version
+9 - Minor version
+3 - Patches
+
+▶ ^ keep this caret symbol if minor and patch wants to get upgraded automatically.
+▶ ~ keep this tilde symbol if only patch wants to get upgraded automatically.
+▶ Also, we can keep only the exact version like "2.9.3" if we want get the exact package.
+▶ Major version cannot be updated automatically, it should be done manually as it will have more impact with new releases.
+
+3️⃣ package-lock.json - It maintains the exact version of the package is installed on development server and also keeps dependent dependencies details.
+✔ Transitive Dependency
+React project needs ➡ parcel (bundler) ➡ parcel itself needs other dependencies one such dependency is Babel ➡ Babel also will have its own dependencies ➡ this is only called "Transitive dependencies"
+
+4️⃣ .gitignore
+✔ Keep all files which can be re-generated.
+node_module, dist, .parcel-cache
+
+5️⃣ package.json & package-lock.json - Using these files, we can re-generate/install all the dependencies required for the project to run on production or any system.
+✔ npm install - this will install all packages/dependencies maintained in package.json and exact versions maintained in package-lock.json.
+🔴 Do not update these files unnecessarily.
+
+
+
+
 
 
 

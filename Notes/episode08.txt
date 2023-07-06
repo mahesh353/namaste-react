@@ -1,0 +1,76 @@
+Class Based Components - 
+Older way to create a component in a react.Class based component is a class which extends React.Component & which has a render method which returns some piece of JSX.
+class UserClass extends React.Component {
+
+
+}
+
+loading a class based component onto the page means we are creating instance of a class.
+if you want to create a state variable in class based component, then constructor is the best place.
+never update the state variables directly. use setstate method to update state variables in class based component.
+
+Why do we right super(props) in class based components?
+
+What are life cycle methods in react class based components?
+Loading/Mouting  are same. 
+When class component gets called at that time first constructor is called & then render method gets called.
+Parent constructor
+Parent render
+Child constructor
+Child render
+Child did mount
+Parent did mount
+
+componentDidMount() - once the class based component is mounted on the dom then this method gets called.
+This method is used to make the API calls. for class based components & for functional components we make
+api calls inside UseEffect because useEffect will get called once component is loaded.
+
+Parent constructor
+parent render
+    akshay constructor
+    akshay render
+    akshay componentDidMount
+    elon constructor
+    elon render
+    elon componentDidMount
+parent componentDidMount
+
+above life cycle sequence is wrong
+
+
+the correct one is - 
+Parent constructor
+parent render
+    akshay constructor
+    akshay render
+    elon constructor
+    elon render
+    (Dom updated in the batches)
+    akshay componentDidMount
+    elon componentDidMount
+parent componentDidMount
+
+React life cycle diagram
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+React loads the component is two phase
+1) Render phase - constructor & render
+2) commit phase - update the dom & component did mount.
+
+
+--Mouting lifecycle---
+constructor(dummy)
+render(dummy)
+<html has dummy data for few miliseconds>
+componentDidMount
+    api call
+    set state
+
+----Update ---
+render(API data);
+<html is loaded with new api data>
+ComponentDidUpdate.
+
+ComponentWillUnmount will get called when the component gets uploaded or when we navigate to another component.
+
+
