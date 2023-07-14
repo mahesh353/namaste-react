@@ -19,5 +19,41 @@ return ()=>{
 
 Controller & Uncontrolled components - 
 
-Lifting the state - 
+if the component is controlling a component itself then it is uncontroller component but if component is controlled by its parent then it is contolled component
+it is just a philoshophy.
 
+Lifting the state - 
+means giving state to parent to control child component.
+
+React context/ context API - 
+
+Props Drilling - 
+
+React follows one way data flow i.e from parent to child & so on & this is known as props Drilling
+passing value to child to child.
+problem with prop drilling - we can only pass data to immediate children only.
+
+How can i access the data anywhere irrespective of immediate children ?
+REact gives us a superpower of react context.
+by using context we can avoid prop drilling. we can place a common data in context and anybody can access that,
+-context is like a global theme.
+-logged in user info
+- theme(light or dark)
+
+we can not use hooks inside class based components. to access context in class based components -
+<UserContext.Consumer>
+{(data) => console.log(data)}
+</UserContext.Consumer>
+
+to set/update the value of context, if the provider is wrapped around specific component then only that component will get updated value rest other components will get the old value.
+
+<UserContext.Provider value={updatedvalue}
+<component>
+</UserContext.Provider>
+
+datamanagement library - state management libraries - redux
+
+context vs redux ?
+
+redux offer extra complex stuff
+but small scale application you can do using context.
