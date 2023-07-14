@@ -1,0 +1,23 @@
+Higher order components - 
+is a nomal javascript function which takes a component as a input, enhance it & returns a component.
+it acts like a enhancer function.
+Higher order components are a pure javascript function which does not modify the input component.
+
+syntax 
+
+const higherOrderFunction = (compononentName) =>{
+
+return ()=>{
+    return (
+        <div>
+        <compononentName/>
+        </div>
+    )
+}
+
+}
+
+Controller & Uncontrolled components - 
+
+Lifting the state - 
+
