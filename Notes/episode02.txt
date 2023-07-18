@@ -1,31 +1,41 @@
-NPM - its not node package manager but its everything apart form node package manager.
-its a package manager. its a standard repository for all the packages.all the packages are hosted in NPM & it manages it for developers.
+** NPM -   
+    Its not node package manager but its everything apart form node package manager.
+    Its a package manager. 
+    Its a standard repository for all the packages.
+    All the packages are hosted in NPM & it manages it for developers.
 
-Package.json is a configuration for the NPM.
-bundler - whole code needs to be budled/minified/optimized bundler help you do all these things.
-bundler bundle/packge your code so that we can shift it to production.
-webpack/parcel/wheat
+** Package.json -
+    Configuration for the NPM.
 
-There are two dependencies/packages
-1) Dev dependencies - it means it is generally required in development phase
-2) Normal dependencies - used in production
+** Bundler -
+    Whole code needs to be bundled/minified/optimized, bundler help you do all these things.
+    Bundler bundles/packges your code so that we can shift it to production.
+    Webpack/Parcel/vite
 
-24/06/2023
-~ - it will upgrade the package to the latest major version 
-^ - it will upgrade the package to the latest minor version. this is recommended.
+** Dependencies/packages -
+    Dev dependencies - it means it is generally required in development phase
+    Normal dependencies - used in production & development
 
-package-lock.json - keeps the track of the exact version of the package which has been installed.
-transitive dependencies - our project has a dependency on one package that package has dependency on another packages this is called "transitive dependency".
-.gitignore - if you want restrict some code or some files not to go inside git then put those file names in the .gitignore.
+** Special characters - 
+    ~ - it will upgrade the package to the latest patch update vesion, use for locking major & minor vesion.
+        install 1.1.*
+    ^ - it will upgrade the package to the latest minor version. this is recommended. used for locking major vesion only
+        install 1.*.*
+** package-lock.json - 
+    Keeps the track of the exact version of the package which has been installed.
+    Transitive dependencies - our project has a dependency on one package that package has dependency on another packages this is called "transitive dependency".
 
-Building the app using parcel -
+**.gitignore - 
+    if you want restrict some code or some files not to go inside git then put those file names in the .gitignore.
 
-npx parcel index.html
+** Parcel -
+    
+    To build the app using parcel - npx parcel index.html
+    npx - executing a package.
+    npm - install a package.
 
-npx - executing a package.
-npm - install a package.
-
-Injecting the react into the application using cdn is not a good way. Injecting the react into the application using npm package is preffered way.
+** Injecting the react into the application using cdn is not a good way. 
+** Injecting the react into the application using npm package is preffered way.
 
 Parcel - 
 
