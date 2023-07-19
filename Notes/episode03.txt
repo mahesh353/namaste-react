@@ -1,59 +1,58 @@
-JSX - Javascript syntax to create react elements.
-Html or xml like syntax
-JSX is not part of React. React & JSX both are different things. JSX makes developers life easy.
-JSX is not html inside javascript.
-JSX is not html.
-JSX is a html like syntax.
-JSX is not valid/Pure javascript. js engine does not understand this code.
-Parcel => Babel is basically coverting/transpile JSX code to valid/pure javascript.
-while giving attribute to JSX we need to follow camel casing ex - id, className, tabIndex etc.
-JSX will take care about the xss attacks by sanitizing the data inside {}.
-JSX expression must have only one parent element
+** JSX - 
+    Javascript syntax to create react elements.
+    Html or xml like syntax
+    JSX is not part of React. React & JSX both are different things. 
+    JSX makes developers life easy.
+    JSX is not html inside javascript.
+    JSX is not html.
+    JSX is a html like syntax.
+    JSX is not valid/Pure javascript. js engine does not understand this code.
 
-React components -
+** Parcel - 
+    Babel is basically coverting/transpiling JSX code to valid/pure javascript.
+    While giving attribute to JSX we need to follow camel casing ex - id, className, tabIndex etc.
+    JSX will take care about the xss attacks by sanitizing the data inside {}.
+    JSX expression must have only one parent element
 
-1) Class based Components - old way of writing code/ uses javascript classes.
-2) Functional Components - new way of writing code / uses javascript functions.
-- its just a normal javascript function which return jsx code/or which returs react element.
-- you can use normal function as well as arrow function to create functional components.
+** React Components -
+    1) Class based Components - Old way of writing code/ uses javascript classes.
+    2) Functional Components - New way of writing code / uses javascript functions.
+    Its just a normal javascript function which returns jsx code/or which returs react element.
+    You can use normal function as well as arrow function to create functional components.
 
-** Component composition - calling one component inside a another component.
+** Component composition - 
+    Calling one component inside a another component.
 
-{} - is used to render or evaluate the javascript expression.
+** {} - 
+    It is used to render or evaluate the javascript expression.
 
+** React fragments -
+    <React.Fragment> </React.Fragment> - 
+    its a parent element for jsx instead of using div. its like an empty tag. or use <></>
 
-React fragments -
-<React.Fragment> </React.Fragment> - its a parent element for jsx instead of using div. its like an empty tag. or use
-<></>
+** Questions - 
+    Can we have mumtiple root elements in react?
 
+** Code - 
+    //React.CreateElement => React elements - JS Object => HtmlElement(When we render it);
+    var heading = React.createElement(
+                 "h1",
+                  { id: "heading" },
+                  "Namaste React123 !"  
+                );
 
-Questions - 
+    JSX => React.CreateElement => React elements - JS Object => HtmlElement(When we render it);
+    const jsxHeading = (
+                    <h1 id="heading" className="head">
+                    Namaste React using JSX !
+                  </h1>
+                );
 
-Can we have mumtiple root elements in react?
-
-Code - 
-
-
-//React.CreateElement => React elements - JS Object => HtmlElement(When we render it);
-var heading = React.createElement(
-  "h1",
-  { id: "heading" },
-  "Namaste React123 !"
-);
-
-// JSX => React.CreateElement => React elements - JS Object => HtmlElement(When we render it);
-// React Element
-const jsxHeading = (
-  <h1 id="heading" className="head">
-    Namaste React using JSX !
-  </h1>
-);
-
-const TitleComponent = () => (
-  <h1 id="heading" className="head">
-    Namaste React using JSX !
-  </h1>
-);
+    const TitleComponent = () => (
+                    <h1 id="heading" className="head">
+                      Namaste React using JSX !
+                    </h1>
+                  );
 
 //React Components
 const HeadingComponent = () => {
@@ -70,7 +69,9 @@ const HeadingComponent = () => {
 };
 
 
-React - NPM (Package Manager but it is not "node package manager!!")
+** NPM 
+
+(Package Manager but it is not "node package manager!!")
 📦 package.json & 🔒 package-lock.json
 
 **Imp** I failed in few of the interviews because of not able to answer properly on npm even though having work experience.
