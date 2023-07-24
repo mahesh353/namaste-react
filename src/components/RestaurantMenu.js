@@ -18,19 +18,12 @@ const RestaurantMenu = () => {
   const { itemCards } =
     restaurantInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards[1].card.card;
 
-  console.log(
-    "cards",
-    restaurantInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards
-  );
-
   const categories =
     restaurantInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards.filter(
       (category) =>
         category?.card?.card?.["@type"] ===
         "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
     );
-
-  console.log("categories", categories);
 
   return (
     <div className="text-center">

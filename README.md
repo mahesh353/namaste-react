@@ -17,3 +17,11 @@
  *  - Links
  *  - Contact
  */
+
+ #Redux Toolkit
+    - Install @reduxjs/toolkit react-redux.
+    - Build our store
+    - Connect our store to our app
+    - Create a cart slice
+    - Dispatch an action
+    - Read the data using selector

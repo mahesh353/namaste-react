@@ -1,0 +1,41 @@
+Redux - 
+
+Redux is not mandatory - 
+Redux & React are different libraries.
+React offer you a great solution for data management.
+handling state of an application.
+Redux toolkit - new way of writing redux.
+why redux toolkit -
+1) Configuring the redux store is too complicated.
+2) I have to configure a lot of packages to get redux to do anything useful.
+3)  Redux requires to much boilerplate code.
+
+Redux store is big js object which is kept in global central place
+slices inside redux store, logical separation of object.
+cart slice, user slice.
+we can not directly modify the cart slice.there is a way we can do that, if i clikc on add buttion it dispatches an action
+it calls a function & this function will actually modify the cart.
+what is this function -  is basically known as a reducer.
+
+when we hit the add buttion it dispatches an action which calls the reducer function which modifies the slice of our redux store.
+
+to read the data from the store we use selector & selector will modify the react component. this phenomeon is known as subscribing to the store.
+which means that it is in sync with the store.
+
+npm install @reactjs/toolkit
+npm install react-redux
+
+whenver you are subscribing to the store make sure you are subscribing to the right portion only.
+dont subscribe to the whole store to avoid performance issues.
+
+redux used immer library behind the scene to create immutable objects behind the scenes.
+
+when you are dealing with very large application that deals with lot of components in that case only use the redux for small scale 
+applications using redux is not good.
+
+middlware & thungs
+
+
+
+
+Zustand state management library.
