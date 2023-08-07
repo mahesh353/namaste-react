@@ -1,0 +1,44 @@
+Testing - 
+
+Developer can do 2 types of testing - 
+1) Manual testing
+2) Unit testing using code.
+
+by writing test code we can do 3 types of testing that developer can do- 
+1) Unit testing - you test your react component in isolation
+2) Integration testing - mutiple component talking to each other & if we are writing a test agaist it. then it is integration testing.
+3) End to End testing(E2E) - Testing of the website start from the user landing on the page until user leaves the website
+
+As a developer we are concenrned about first two types of testing.
+
+Library - 
+@testing-library/react
+
+react testing library uses jest to test
+jest is a javascript testing library and its a standard to write test cases.
+Jest intern uses babel.
+
+Setting up testing in our app -
+
+1) install @testing-library/react
+2) install jest
+3) install babel dependencies given on js website
+4) Configure babel/added babel.config.js
+5) configure parcel config file to disable default babel traspilation.
+6) Jest configuration
+    npx jest --init
+7) Install Js DOM library
+8) Install @babel/preset-react library to make JSX work inside test cases
+9) Include @babel/preset-react inside babel config.
+10) Install @testing-library/jest-dom
+
+__test__ is known as dunder 
+
+basics of testing
+1) Render something
+2) Query something
+3) Assert something
+
+Describe block is used to group the test cases.
+
+test cases should start with test or it.

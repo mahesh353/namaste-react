@@ -23,9 +23,11 @@ const Body = () => {
     );
     var json = await data.json();
 
+    console.log(json);
+    console.log(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     //optional chaining in javascript
-    setListOfRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-    setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+    setListOfRestaurants(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    setFilteredRestaurants(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   };
 
   const onlineStatus = useOnlineStatus();
@@ -40,7 +42,7 @@ const Body = () => {
 
   console.log(listOfRestaurants);
 
-  return listOfRestaurants.length === 0 ? (
+  return listOfRestaurants?.length === 0 ? (
     <Shimmer />
   ) : (
     <div className="body">
@@ -60,7 +62,7 @@ const Body = () => {
               //filter the restaurants and update the UI
               let filteredRestaurants = listOfRestaurants.filter(
                 (restaurant) => {
-                  return restaurant.data.name
+                  return restaurant.info.name
                     .toLowerCase()
                     .includes(searchText.toLowerCase());
                 }
@@ -77,7 +79,7 @@ const Body = () => {
             className="px-4 py-2 bg-gray-100 rounded-lg"
             onClick={() => {
               listOfRestaurants = listOfRestaurants.filter((res) => {
-                return res.data.avgRating > 4;
+                return res.info.avgRating > 4;
               });
               setFilteredRestaurants(listOfRestaurants);
             }}
@@ -87,13 +89,13 @@ const Body = () => {
         </div>
       </div>
       <div className="flex flex-wrap">
-        {filteredRestaurants.map((restaurant) => (
+        {filteredRestaurants?.map((restaurant) => (
 
           <Link
-            to={"/restaurants/" + restaurant.data.id}
-            key={restaurant.data.id}
+            to={"/restaurants/" + restaurant.info.id}
+            key={restaurant.info.id}
           >
-            {restaurant.data.promoted ? 
+            {restaurant.info.promoted ? 
               <PromotedRestaurantCard resData={restaurant} />
             : 
               <RestaurantCard resData={restaurant} />
