@@ -5,7 +5,7 @@ const RestaurantCard = (props) => {
   const { name, cuisines, avgRating, deliveryTime, cloudinaryImageId } =
     restaurant;
   return (
-    <div className="m-4 p-4 w-[200px] bg-gray-200 rounded-lg hover:bg-gray-400">
+    <div data-testid="restaurantCard" className="m-4 p-4 w-[200px] bg-gray-200 rounded-lg hover:bg-gray-400">
       <img className="rounded-lg text-lg" src={CDN_URL + cloudinaryImageId} />
       <h3 className="font-bold py-4">{name}</h3>
       <h4 className="break break-words">{cuisines.join(",")}</h4>

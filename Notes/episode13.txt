@@ -42,3 +42,11 @@ basics of testing
 Describe block is used to group the test cases.
 
 test cases should start with test or it.
+
+beforeEach() - this will run before each test cases.
+beforeAll() - Code will run before all test cases.
+
+afterAll()
+afterEach()
+
+
